@@ -1,0 +1,36 @@
+html
+	head
+	
+	script
+		include myscript.js
+	body
+		a(href="/home") HomePage
+		i &nbsp;&nbsp;&nbsp;&nbsp;
+		a(href="/logout") LogOut
+		br
+		br
+		h1(style="text-align:center")  My Orders
+		
+		table(style="width:100%;" border="1")
+			thead
+				th Item
+				th Serve
+				th Price
+				th Remarks
+				th Location
+				th Delivery
+				th(colspan=2) Operations
+			tbody
+			
+			each val,index in foo
+				tr
+					td=val.item
+					td=val.serve
+					td=val.price
+					td=val.remarks
+					td=val.location
+					td=val.delivery
+					td
+						a(href="/editfood/"+index) Edit
+					td
+						button(onclick="del("+index+")") delete

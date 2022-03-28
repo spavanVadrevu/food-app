@@ -1,0 +1,22 @@
+html
+	body
+		h1(style="text-align:center") Available Food Items
+		
+		table(style="width:100%;" border="1")
+			thead
+				th Item
+				th Serve
+				th Price
+				th Remarks
+				th Location
+				th Delivery
+			tbody
+			
+			each val in loc
+				tr
+					td=val.item
+					td=val.serve
+					td=val.price
+					td=val.remarks
+					td=val.location
+					td=val.delivery

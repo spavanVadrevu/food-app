@@ -1,0 +1,16 @@
+html
+	body
+		h1(style="text-align:center") GetFood Page
+		br
+		br
+		a(href="/home") HomePage
+		i &nbsp;&nbsp;&nbsp;&nbsp;
+		a(href="/logout") LogOut
+		br
+		form(action="/filter")
+			select(name="dropdown")
+				each loc in loct
+					option=loc
+			button Submit
+		
+		

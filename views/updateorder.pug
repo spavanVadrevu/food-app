@@ -1,0 +1,21 @@
+html
+	head
+		script
+			include myscript.js
+	body
+		form(action="/additem" name="f1")
+			input(type="text" name="item" value=foo.item)
+			br
+			input(type="text" name="serve" value=foo.serve)
+			br
+			input(type="text" name="price" value=foo.price)
+			br
+			input(type="text" name="remarks" value=foo.remarks)
+			br
+			input(type="text" name="location" value=foo.location)
+			br
+			input(type="text" name="delivery" value=foo.delivery)
+			br
+			button(onclick="upd(event,"+id+")") Update
+			
+			

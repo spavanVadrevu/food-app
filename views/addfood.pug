@@ -1,0 +1,27 @@
+html
+	body
+		h1(style="text-align:center") AddFood Page
+		br
+		a(href="/home") HomePage
+		i &nbsp;&nbsp;&nbsp;&nbsp;
+		a(href="/logout") LogOut
+		br
+		br
+		form(action="/additem")
+			input(type="text" name="item" placeholder="Food Item" required)
+			br
+			input(type="text" name="serve" placeholder="Serves for?" required)
+			br
+			input(type="text" name="price" placeholder="Enter Price" required)
+			br
+			input(type="text" name="remarks" placeholder="Remarks" required)
+			br
+			input(type="text" name="location" placeholder="Location" required)
+			br
+			input(type="text" name="delivery" placeholder="Delivery" required)
+			br
+			input(type="hidden" name="username" value=user)
+			br
+			button AddFood
+			
+		

@@ -1,0 +1,29 @@
+html
+	body
+		a(href="/home") HomePage
+		i &nbsp;&nbsp;&nbsp;&nbsp;
+		a(href="/logout") LogOut
+		br
+		br
+		h1(style="text-align:center") Placed Orders
+		
+		table(style="width:100%;" border="1")
+			thead
+				th User
+				th Item
+				th Serve
+				th Price
+				th Remarks
+				th Location
+				th Delivery
+			tbody
+			
+			each val in foo
+				tr
+					td=val.user
+					td=val.item
+					td=val.serve
+					td=val.price
+					td=val.remarks
+					td=val.location
+					td=val.delivery

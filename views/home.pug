@@ -1,0 +1,40 @@
+html
+	body
+		a(href="/addfood") AddFood
+		i &nbsp;&nbsp;&nbsp
+		a(href="/getfood") GetFood
+		i &nbsp;&nbsp;&nbsp
+		a(href="/logout") LogOut
+		i &nbsp;&nbsp;&nbsp
+		a(href="/myorder") MyOrders
+		i &nbsp;&nbsp;&nbsp
+		a(href="/placed") PlacedOrders
+		i &nbsp;&nbsp;&nbsp
+		a(href="/myfood") Myfood
+		br
+		br
+		h1(style="text-align:center") All Food Items
+		
+		table(style="width:100%;" border="1")
+			thead
+				th User
+				th Item
+				th Serve
+				th Price
+				th Remarks
+				th Location
+				th Delivery
+				th Action
+			tbody
+			
+			each val,index in foo
+				tr
+					td=val.user
+					td=val.item
+					td=val.serve
+					td=val.price
+					td=val.remarks
+					td=val.location
+					td=val.delivery
+					td
+						a(href="/buy"+index) Buy
